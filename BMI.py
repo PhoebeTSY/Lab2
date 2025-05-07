@@ -5,13 +5,13 @@ def calculate_bmi(height, weight):
     print("Bmi = " + str(bmi))
 
     if bmi < 18.5:
-        print("STICK")
+        print("Under Weight")
 
     elif bmi>=18.5 and bmi<=25.0:
-        print("NOT FAT")
+        print("Normal Weight")
 
     elif bmi>25.0:
-        print("FAT")
+        print("Over Weight")
     
 calculate_bmi(weight=57, height=1.73)
 
