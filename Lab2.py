@@ -10,8 +10,7 @@ def display_main_menu():
 
 def get_user_input():
     x = input('Enter the number: ')
-    txt = x
-    x = txt.split(",")
+    x = x.split(",")
     thislist = x
     listfloat = [float(x) for x in thislist]
     print(listfloat)
@@ -30,6 +29,7 @@ def calc_min_max_temperature(listfloat):
     print("The minimum temperature is " + str(minimum_value))
     maximum_value = max(listfloat)
     print("The maximum temperature is " + str(maximum_value))
+
     
 
 if __name__ == "__main__":
