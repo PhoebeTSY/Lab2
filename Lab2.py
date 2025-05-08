@@ -4,6 +4,8 @@ def main():
     listfloat = get_user_input()
     calc_average(listfloat)
     calc_min_max_temperature(listfloat)
+    ascending = sort_temperature(listfloat)
+    calc_median_temperature(ascending)
 
 def display_main_menu():
     print("Enter some numbers separated by commas (e.g. 5, 67, 32)")
@@ -30,7 +32,16 @@ def calc_min_max_temperature(listfloat):
     maximum_value = max(listfloat)
     print("The maximum temperature is " + str(maximum_value))
 
-    
+def sort_temperature(listfloat):
+    ascending = sorted(listfloat)
+    print(ascending)
+    return(ascending)
+
+def calc_median_temperature(ascending):
+    mid = len(ascending) // 2
+    median = (ascending[mid] + ascending[~mid]) / 2
+    print("Median of list is : " + str(median))
+    return(0)
 
 if __name__ == "__main__":
     main()
